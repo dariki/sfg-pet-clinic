@@ -29,7 +29,8 @@ HELP.md
 .vscode/
 
 ### Maven ###
-*/target/
+/pet-clinic-data/target/**
+/pet-clinic-web/target/**
 *.class
 *.jar
 *.war
