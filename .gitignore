@@ -29,7 +29,7 @@ HELP.md
 .vscode/
 
 ### Maven ###
-target/
+*/target/**
 *.class
 *.jar
 *.war
