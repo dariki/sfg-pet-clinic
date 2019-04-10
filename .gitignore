@@ -28,5 +28,11 @@ HELP.md
 ### VS Code ###
 .vscode/
 
-### Java ###
-.class
+### Maven ###
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
