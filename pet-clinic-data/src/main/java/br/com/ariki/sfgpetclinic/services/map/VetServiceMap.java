@@ -2,10 +2,12 @@ package br.com.ariki.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import br.com.ariki.sfgpetclinic.model.Vet;
-import br.com.ariki.sfgpetclinic.services.CrudService;
 import br.com.ariki.sfgpetclinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 	@Override

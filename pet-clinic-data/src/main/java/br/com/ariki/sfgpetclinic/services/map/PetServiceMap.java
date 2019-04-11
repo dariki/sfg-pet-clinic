@@ -2,9 +2,12 @@ package br.com.ariki.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import br.com.ariki.sfgpetclinic.model.Pet;
 import br.com.ariki.sfgpetclinic.services.CrudService;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
 	@Override

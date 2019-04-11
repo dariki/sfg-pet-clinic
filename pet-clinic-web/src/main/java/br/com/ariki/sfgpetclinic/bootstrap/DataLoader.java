@@ -7,8 +7,6 @@ import br.com.ariki.sfgpetclinic.model.Owner;
 import br.com.ariki.sfgpetclinic.model.Vet;
 import br.com.ariki.sfgpetclinic.services.OwnerService;
 import br.com.ariki.sfgpetclinic.services.VetService;
-import br.com.ariki.sfgpetclinic.services.map.OwnerServiceMap;
-import br.com.ariki.sfgpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -16,12 +14,11 @@ public class DataLoader implements CommandLineRunner {
 	private final OwnerService ownerService;
 	private final VetService vetService;
 	
-
-	public DataLoader() {
-		this.ownerService = new OwnerServiceMap();
-		this.vetService = new VetServiceMap();
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
-	
+
 	@Override
 	public void run(String... args) throws Exception {
 		Owner owner1 = new Owner();

@@ -2,10 +2,12 @@ package br.com.ariki.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import br.com.ariki.sfgpetclinic.model.Owner;
-import br.com.ariki.sfgpetclinic.services.CrudService;
 import br.com.ariki.sfgpetclinic.services.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	@Override
