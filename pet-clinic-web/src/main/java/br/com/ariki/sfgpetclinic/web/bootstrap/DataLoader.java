@@ -7,7 +7,6 @@ import br.com.ariki.sfgpetclinic.data.model.Owner;
 import br.com.ariki.sfgpetclinic.data.model.PetType;
 import br.com.ariki.sfgpetclinic.data.model.Vet;
 import br.com.ariki.sfgpetclinic.data.services.OwnerService;
-import br.com.ariki.sfgpetclinic.data.services.PetService;
 import br.com.ariki.sfgpetclinic.data.services.PetTypeService;
 import br.com.ariki.sfgpetclinic.data.services.VetService;
 
@@ -29,12 +28,18 @@ public class DataLoader implements CommandLineRunner {
 		Owner owner1 = new Owner();
 		owner1.setFirstName("Michael");
 		owner1.setLastName("Weston");
+		owner1.setAddress("123 Brickerel St");
+		owner1.setCity("Miami");
+		owner1.setTelephone("9783282424");
 		
 		this.ownerService.save(owner1);
 		
 		Owner owner2 = new Owner();
 		owner2.setFirstName("Fiona");
 		owner2.setLastName("Glennane");
+		owner2.setAddress("321 Brickerel St");
+		owner2.setCity("Miami");
+		owner2.setTelephone("9783281237");
 		
 		this.ownerService.save(owner2);
 		

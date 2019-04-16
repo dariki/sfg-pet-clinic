@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.ariki.sfgpetclinic.data.services.OwnerService;
 import br.com.ariki.sfgpetclinic.data.services.VetService;
 
 @Controller
